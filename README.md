@@ -4,7 +4,6 @@ node and npm
 =======
 node and
 npm
->>>>>>> 9e87649fc1f6247250be2be40ba78ae3222cf7cd
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
