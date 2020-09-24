@@ -1,0 +1,17 @@
+@import "./Signup.scss";
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  height: 100vh;
+  @include flexCenter(column);
+}
+
+.logo{
+  height: 200px;
+}

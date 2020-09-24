@@ -1,0 +1,91 @@
+@mixin flexCenter($direction) {         //Mixin for resuing flex box which sets elements into center
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+.sign-up{
+    @include flexCenter(column);        // Responsible for whole sign up box
+    margin: auto;
+    max-height: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 5px -2px grey;
+    border-radius: 4px;
+}
+
+.sign-up-buttons{                      // setting up sign up google/facebook together into one line with eqaul space around
+    @include flexCenter(row);
+}
+
+.custom-google-button{                  // setting sign up with google button width
+    width: 45%;    
+    outline: none;
+}
+
+.facebook-button {                      //styling for sign up with facebook button
+    color: black;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0px 0px 0px 0px grey;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    i{
+        font-size: 13px;
+        color: white;
+        padding: 6px;
+        margin-right: 4px;
+        border-radius: 2px;
+        background-color:darkblue;
+    }
+}
+
+.sign-up-form{                          // setting policy line into center
+    text-align: center;
+}
+
+input{                                  // styling for all inputs
+    height: 40px;
+    width: 400px;
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    text-decoration: none;
+    outline: none;
+}
+
+span{
+    font-size: 13px;
+}
+
+button{                                 // styling for sign up button
+    padding: 12px;
+    margin: 20px;
+    width: 90%;
+    background-color: rgb(152, 152, 230);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p {                                     // styling for or and line between sign with google button and sign up form
+    width: 80%; 
+    text-align: center; 
+    border-bottom: 1px solid grey; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    font-size: 12px;
+ } 
+
+ p span { 
+    background:#fff; 
+    padding:0 10px; 
+}
